@@ -25,8 +25,8 @@ pipeline {
 					echo 'docker image build'
 					GIT_TAG=$(git describe --abbrev=0)
 					echo 'latest tag = $GIT_TAG'
-					docker build -t $image_repo:$GIT_TAG .
-					docker images
+					sudo docker build -t $image_repo:$GIT_TAG .
+					sudo docker images
 					'''
 			}
 		}
