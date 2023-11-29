@@ -13,7 +13,7 @@ pipeline {
 		}
 		stage('Maven build') {
 			steps {
-				sh './mvnw clean package'
+				sh './mvnw clean package -P MySQL'
 			}
 		}
 	}
