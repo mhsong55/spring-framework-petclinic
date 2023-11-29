@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('agent-test') {
 			steps {
-				echo 'Hello Jenkins'
+				echo 'Hello Jenkins!'
 			}
 		}
 	}
